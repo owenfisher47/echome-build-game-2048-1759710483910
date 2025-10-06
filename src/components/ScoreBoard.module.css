@@ -1,0 +1,78 @@
+.scoreBoard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 320px;
+}
+
+.scores {
+  display: flex;
+  gap: 15px;
+}
+
+.scoreContainer {
+  background: #bbada0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.scoreLabel {
+  font-size: 12px;
+  color: #eee4da;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.scoreValue {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.restartButton {
+  background: #8f7a66;
+  color: #f9f6f2;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.restartButton:hover {
+  background: #9f8a76;
+}
+
+.restartButton:active {
+  background: #7f6a56;
+}
+
+@media (max-width: 520px) {
+  .scoreBoard {
+    width: 280px;
+  }
+
+  .scoreContainer {
+    min-width: 60px;
+    padding: 6px 10px;
+  }
+
+  .scoreLabel {
+    font-size: 10px;
+  }
+
+  .scoreValue {
+    font-size: 16px;
+  }
+
+  .restartButton {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
